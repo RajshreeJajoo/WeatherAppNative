@@ -35,9 +35,9 @@ const CountryName = ({ navigation }) => {
                 <TextInput style={styles.text} placeholder='Enter Country Name' value={country} onChangeText={(text) => setCountry(text)} />
 
                 <View style={styles.button}>
-                    <Button title='Submit' onPress={getCountryDetails} disabled={!country} />
+                    <Button color="#9167F4" title='Submit' onPress={getCountryDetails} disabled={!country} />
                     <View style={styles.space} />
-                    <Button title='Reset' onPress={() => setCountry('')} />
+                    <Button color="#9167F4" title='Reset' onPress={() => setCountry('')} />
                     <View style={styles.space} />
                 </View>
             </View>

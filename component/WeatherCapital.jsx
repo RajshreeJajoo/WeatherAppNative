@@ -23,7 +23,7 @@ const WeatherCapital = ({ navigation }) => {
             <View>
                 <Card style={styles.container}>
                     <Card.Content>
-                        <Title style={{ textAlign: 'center' }}>Capital Name :- {capital}</Title>
+                        <Title style={{ textAlign: 'center' ,color:'#9167F4'}}>Capital Name :- {capital}</Title>
                     </Card.Content>
                     <Card.Content style={styles.details}>
                         <Text style={styles.text}>Temperature :- {value?.temperature}</Text>
@@ -31,7 +31,7 @@ const WeatherCapital = ({ navigation }) => {
                         <Text style={styles.text}>Wind Speed:- {value?.wind_speed}</Text>
                         <Text style={styles.text}>Precip:- {value?.precip}</Text>
                         <View style={styles.button}>
-                            <Button color="#00bfff" title="Back to Home"
+                            <Button color="#9167F4" title="Back to Home"
                                 onPress={() => navigation.navigate('Firstpage')} />
                         </View>
 
@@ -46,6 +46,8 @@ const WeatherCapital = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         marginTop: 125,
+        backgroundColor:'#E5DFF1'
+
     },
     text: {
         borderWidth: 3,

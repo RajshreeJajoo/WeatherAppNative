@@ -10,7 +10,7 @@ const CountryDetails = ({ navigation }) => {
             <View>
                 <Card style={styles.container}>
                     <Card.Content>
-                        <Title style={{ textAlign: 'center' }}>Country Name :- {countrydetails.name.common}</Title>
+                        <Title style={{ textAlign: 'center' ,color:'#9167F4' }}>Country Name :- {countrydetails.name.common}</Title>
                     </Card.Content>
                     <Card.Content style={styles.details}>
                         <Text style={styles.text}>Captial :- {countrydetails.capital}</Text>
@@ -19,7 +19,7 @@ const CountryDetails = ({ navigation }) => {
                         <Text style={styles.text}>TimeZone:- {countrydetails.timezones}</Text>
                         {/* <Image source={{ uri: { flag } }} style={{ width: 120, height: 120, margin: 20 }} /> */}
                         <View style={styles.button}>
-                            <Button color="#00bfff" title="Captial Weather Information"
+                            <Button color="#9167F4" title="Captial Weather Information"
                                 onPress={() => navigation.navigate('Weather', {
                                     paramKey: { capitalname }
                                 })} />
@@ -33,7 +33,8 @@ const CountryDetails = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 125,
+        marginTop: 100,
+        backgroundColor:'#E5DFF1'
     },
     text: {
         borderWidth: 3,
