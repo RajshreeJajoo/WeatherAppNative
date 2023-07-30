@@ -6,7 +6,7 @@ import LoginWeatherPage from './component/LoginWeatherPage';
 import CountryName from './component/CountryName';
 
   const AppNavigator = createStackNavigator({
-    Firstpage:{
+    HomePage:{
       screen:LoginWeatherPage
     },
     Name:{
@@ -19,7 +19,7 @@ import CountryName from './component/CountryName';
       screen: WeatherCapital
     }
   },{
-          initialRouteName: "Firstpage"
+          initialRouteName: "HomePage"
   });
  
 

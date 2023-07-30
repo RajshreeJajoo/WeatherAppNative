@@ -32,7 +32,7 @@ const WeatherCapital = ({ navigation }) => {
                         <Text style={styles.text}>Precip:- {value?.precip}</Text>
                         <View style={styles.button}>
                             <Button color="#9167F4" title="Back to Home"
-                                onPress={() => navigation.navigate('Firstpage')} />
+                                onPress={() => navigation.navigate('HomePage')} />
                         </View>
 
                     </Card.Content>
